@@ -1,10 +1,13 @@
-local _ENV = (getgenv or getrenv or getfenv)()
-
-local Scripts = {
-    { Name = "PlantsVsBrainrots", Url = "loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/PlantsVsBrainrots"))()" },
-    { Name = "FixLag",             Url = "https://raw.githubusercontent.com/Luongdaynetroi/Free/964d0730156249f89e7d24c74c27960bffc3f0d3/FixLag/roblox/.lua" },
-    { Name = "AntiAFK",            Url = "https://raw.githubusercontent.com/Luongdaynetroi/AntiAfk/refs/heads/main/Free/.lua" }
-}
+loadstring([[
+    -- Script 1: AntiAFK
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Luongdaynetroi/AntiAfk/refs/heads/main/Free/.lua"))()
+    
+    -- Script 2: FixLag
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Luongdaynetroi/Free/964d0730156249f89e7d24c74c27960bffc3f0d3/FixLag/roblox/.lua"))()
+    
+    -- Script 3: PlantsVsBrainrots
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/PlantsVsBrainrots"))()
+]])()
 
 local function httpGetSafe(url)
     local ok, res = pcall(function() return game:HttpGet(url, true) end)
