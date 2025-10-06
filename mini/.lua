@@ -6,7 +6,7 @@ loadstring([[
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Luongdaynetroi/Free/964d0730156249f89e7d24c74c27960bffc3f0d3/FixLag/roblox/.lua"))()
     
     -- Script 3: PlantsVsBrainrots
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/PlantsVsBrainrots"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tokaruun/plantvsbrainrot/refs/heads/main/script.lua"))()
 ]])()
 
 local function httpGetSafe(url)
